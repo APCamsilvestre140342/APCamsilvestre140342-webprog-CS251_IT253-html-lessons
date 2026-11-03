@@ -1,25 +1,313 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal profile webpage">
+    <title>My Personal Profile</title>
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+
+        #gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1.25rem;
+        }
+
+        #gallery h2 {
+            grid-column: 1 / -1;
+        }
+
+        #gallery figure {
+            margin: 0;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        #gallery figure a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .gallery-image {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #gallery figure:hover {
+            transform: scale(1.03);
+        }
+
+
+        .table-wrapper {
+            overflow-x: auto
+        }
+    </style>
+
 </head>
+
+
+
 <body>
+    <div class="container">
+        <header id="top">
+            <h1>Hello, I’m Anika Marie Silvestre.</h1>
+            <p>IT student. Curious learner. Future developer.</p>
+            <nav aria-label="Main navigation"><a style="margin-right: 10px;" href="#about">About</a><a
+                    style="margin-right: 10px;" href="#education">Education</a><a style="margin-right: 10px;"
+                    href="#experience">Experience</a><a style="margin-right: 10px;" href="#hobbies">Hobbies</a><a
+                    style="margin-right: 10px;" href="#goals">Goals</a><a style="margin-right: 10px;"
+                    href="#gallery">Gallery</a></nav>
+        </header>
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am <strong>Anika Marie Silvestre</strong>, a student who enjoys learning about technology and
+                    exploring
+                    creative ideas. I believe that <span class="highlight">small steps lead to progress</span>.</p>
+                <p>This page introduces my interests, learning experiences, and dreams for the future.</p>
+            </section>
+            <section id="education">
+                <h2>Education & Awards</h2>
 
-<h1>Personal Profile Web page </h1>
-<p>
+                <div class=" table-wrapper">
+                    <p style="margin-bottom: 10px; margin-left: 30vw;"><b>My learning journey</b></p>
+                    <table>
 
-About Me
- ( Do not include birthdate / age / contact information)
-Education / Achievements
-Course 
-IT Experience
-Hobbies & Interests
-Goals In Life / Dream
-Picture Gallery
-<img src="https://manilatimes.net/manilatimes/uploads/images/2025/07/21/684848.jpg" alt="Girl with a jacket" width="500" height="600">
-</p>
+                        <thead>
+                            <tr>
+                                <th>Level</th>
+                                <th>School</th>
+                                <th>Achievement</th>
 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Elementary</td>
+                                <td>Trinidad Tecson Elementary School</td>
+                                <td>YMCA Leader, Girl Scout, 3rd place Poster Making Contest Competition</td>
+                            </tr>
+                            <tr>
+                                <td>High School - Senior High School</td>
+                                <td>Manuel A. Roxas High School</td>
+                                <td>Girl Scout, YMCA Officer P.O, Red Cross PIO, RMMO Scribe Committee, ICT Strand, Muse
+                                </td>
 
-  
+                            </tr>
+                            <tr>
+                                <td>College</td>
+                                <td>Asia Pacific College</td>
+                                <td>JPCS Operaation Officer, IT Student, SM Scholar </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>My Course</h3>
+                <p>Bachelor of Science in <strong>Information Technology</strong></p>
+            </section>
+            <section id="experience">
+                <h2>IT Experience</h2>
+                <ul>
+                    <li>Creating basic webpages with HTML and CSS</li>
+                    <li>Writing beginner programs</li>
+                    <li>Using Microsoft office applications for schoolwork</li>
+                    <li>Learning computer troubleshooting</li>
+                    <li>Learning Computer Systems and Networks</li>
+                </ul>
+            </section>
+            <section id="hobbies">
+                <h2>Hobbies &amp; Interests</h2>
+                <ul>
+                    <li>Playing games Roblox, F1 Car Racing, Taken, Taiko, Badminton</li>
+                    <li>Listening to music; BTS, Cap of joe, Lola Amour, ed sheeran, Taylor Swift, billie eilish, IV of
+                        spades, etc...</li>
+                    <li>Taking photographs</li>
+                    <li>Exploring new technology</li>
+                </ul>
+            </section>
+            <section id="goals">
+                <h2>Goals in Life &amp; Dreams</h2>
+                <ol>
+                    <li>Complete my studies.</li>
+                    <li>Build useful websites and applications.</li>
+                    <li>Develop my confidence and technical skills.</li>
+                    <li>Support my family and keep learning.</li>
+                </ol>
+            </section>
+
+            <section id="gallery">
+                <h2>Picture Gallery</h2>
+
+                <figure>
+                    <a href="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Buwan%20ng%20Wika.jpg"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="gallery-image"
+                            src="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Buwan%20ng%20Wika.jpg"
+                            alt="Buwan ng Wika Elementary" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Secretary%20Elementary.jpg"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="gallery-image"
+                            src="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Secretary%20Elementary.jpg"
+                            alt="Secretary Elementary" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Girl%20Scout%20Picture.jpg"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="gallery-image"
+                            src="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Girl%20Scout%20Picture.jpg"
+                            alt="Girl Scout" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Girl%20Scout%20With%20Uniform.jpg"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="gallery-image"
+                            src="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Girl%20Scout%20With%20Uniform.jpg"
+                            alt="Girl Scout with Uniform" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Elementary%20Muse.jpg"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="gallery-image"
+                            src="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Elementary%20Muse.jpg"
+                            alt="Elementary Muse" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Ms.%20Earth%20High%20School.jpg"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="gallery-image"
+                            src="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Ms.%20Earth%20High%20School.jpg"
+                            alt="Ms. Earth High School" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Ms.%20Malaysia%20Muse.jpg"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="gallery-image"
+                            src="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Ms.%20Malaysia%20Muse.jpg"
+                            alt="Ms. Malaysia Muse Senior High" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Graduation%20Picture.jpg"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="gallery-image"
+                            src="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Graduation%20Picture.jpg"
+                            alt="Senior High Graduation" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://manilatimes.net/manilatimes/uploads/images/2025/07/21/684848.jpg" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="gallery-image"
+                            src="https://manilatimes.net/manilatimes/uploads/images/2025/07/21/684848.jpg"
+                            alt="Me with my sister" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/JPCS%20Post%20About%20Me.jpg"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="gallery-image"
+                            src="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/JPCS%20Post%20About%20Me.jpg"
+                            alt="JPCS Post about me" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Muse%20Kinder.jpg"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="gallery-image"
+                            src="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Muse%20Kinder.jpg"
+                            alt="Muse Kinder" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Officer%20Elementary.jpg"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="gallery-image"
+                            src="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Officer%20Elementary.jpg"
+                            alt="Officer Elementary" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/YMCA%20Elementary.jpg"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="gallery-image"
+                            src="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/YMCA%20Elementary.jpg"
+                            alt="YMCA Elementary" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/RMMO%20Officer%20Snioer%20High.jpg"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="gallery-image"
+                            src="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/RMMO%20Officer%20Snioer%20High.jpg"
+                            alt="RMMO Officer Senior High" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/UN%20Muse%20Senior%20High.jpg"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="gallery-image"
+                            src="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/UN%20Muse%20Senior%20High.jpg"
+                            alt="UN Muse Senior High" loading="lazy">
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Muse%20Elementary.jpg"
+                        target="_blank" rel="noopener noreferrer">
+                        <img class="gallery-image"
+                            src="https://raw.githubusercontent.com/APCamsilvestre140342/APCamsilvestre140342-webprog-CS251_IT253-html-lessons/refs/heads/main/introduction/Muse%20Elementary.jpg"
+                            alt="Muse Elementary" loading="lazy">
+                    </a>
+                </figure>
+            </section>
+
+        </main>
+        <footer>
+            <p>Made with curiosity and HTML. <a href="#top">Back to top ↑</a></p>
+        </footer>
+    </div>
 </body>
+
 </html>
