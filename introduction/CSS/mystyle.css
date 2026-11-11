@@ -39,10 +39,6 @@ header p {
 }
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
     font-size: 0;
 }
 
@@ -52,7 +48,7 @@ nav a {
     color: #92003A;
     background-color: #fffdf7;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 8px 14px;
     border: 1px dashed #E06B80;
     border-radius: 20px;
     transition: background-color 0.2s, color 0.2s;
@@ -132,9 +128,6 @@ a {
 #experience ul,
 #hobbies ul,
 #goals ol {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -144,7 +137,6 @@ a {
 #experience li,
 #hobbies li,
 #goals li {
-    flex: 1 1 200px;
     background: linear-gradient(135deg, #fdf3f7 0%, #ff85a0 100%);
     border: 1px dashed #E06B80;
     border-radius: 18px 4px 18px 4px;
@@ -173,33 +165,17 @@ a {
     color: #92003A;
 }
 
-#gallery table,
-#gallery tbody {
-    display: block;
+#gallery table {
     width: 100%;
     border: none;
 }
 
 #gallery caption {
-    display: block;
     color: #92003A;
     margin-bottom: 12px;
 }
 
-#gallery tbody {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-#gallery tr {
-    display: contents;
-}
-
 #gallery td {
-    display: block;
-    flex: 0 1 200px;
     border: none;
     padding: 0 0 8px;
     background-color: #fdf3f7;
@@ -234,13 +210,4 @@ footer {
 footer a {
     color: #fae4b5;
     font-weight: bold;
-}
-
-#gallery td {
-    flex: 1 1 160px;
-    max-width: 220px;
-}
-
-nav a {
-    padding: 8px 14px;
 }
