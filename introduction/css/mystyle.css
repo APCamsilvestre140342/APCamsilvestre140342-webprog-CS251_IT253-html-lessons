@@ -1,0 +1,214 @@
+body {
+    background-color: #7C0E44;
+    color: #4a1a2e;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body > div {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f6e6de;
+    color: #92003A;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 20px 4px 20px 4px;
+    box-shadow: 6px 6px 0 #E06B80;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0 0 16px;
+    font-style: italic;
+}
+
+nav {
+    font-size: 0;
+}
+
+nav a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #92003A;
+    background-color: #fffdf7;
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px dashed #E06B80;
+    border-radius: 20px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #92003A;
+    color: #fffdf7;
+}
+
+section {
+    background-color: #fffdf7;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px 4px 20px 4px;
+    box-shadow: 6px 6px 0 #AA5E7A;
+}
+
+h2 {
+    color: #92003A;
+    border-bottom: 2px dashed #E06B80;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+h2::before {
+    content: "✿ ";
+    color: #E06B80;
+}
+
+h3 {
+    color: #92003A;
+}
+
+a {
+    color: #AA5E7A;
+}
+
+#about span {
+    background-color: #fae4b5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#education div {
+    overflow-x: auto;
+}
+
+#education div p {
+    color: #92003A;
+    text-align: center;
+}
+
+#education table {
+    border-collapse: collapse;
+    border: none;
+}
+
+#education th,
+#education td {
+    border: 1px solid #f3d4e4;
+    padding: 10px;
+    vertical-align: top;
+}
+
+#education th {
+    background-color: #92003A;
+    color: #fffdf7;
+}
+
+#education tbody tr:nth-child(even) {
+    background-color: #fdf3f7;
+}
+
+#experience ul,
+#hobbies ul,
+#goals ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: goal;
+}
+
+#experience li,
+#hobbies li,
+#goals li {
+    background: linear-gradient(135deg, #fdf3f7 0%, #ffc3ec 100%);
+    border: 1px dashed #E06B80;
+    border-radius: 18px 4px 18px 4px;
+    padding: 12px 15px;
+    box-shadow: 3px 3px 0 #f3d4e4;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#experience li:hover,
+#hobbies li:hover,
+#goals li:hover {
+    transform: translateY(-4px) rotate(-1deg);
+    box-shadow: 5px 6px 0 #E06B80;
+}
+
+#experience li::before,
+#hobbies li::before {
+    content: "✿ ";
+    color: #92003A;
+}
+
+#goals li::before {
+    counter-increment: goal;
+    content: counter(goal) ". ";
+    font-weight: bold;
+    color: #92003A;
+}
+
+#gallery table {
+    width: 100%;
+    border: none;
+}
+
+#gallery caption {
+    display: block;
+    color: #92003A;
+    margin-bottom: 12px;
+}
+
+#gallery td {
+    border: none;
+    padding: 0 0 8px;
+    background-color: #fdf3f7;
+    border-radius: 12px 4px 12px 4px;
+    overflow: hidden;
+    color: #92003A;
+    font-size: 0.9em;
+    box-shadow: 3px 3px 0 #f3d4e4;
+}
+
+#gallery img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 6px;
+    transition: transform 0.3s;
+}
+
+#gallery a:hover img,
+#gallery a:focus img {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    color: #f6e6de;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+footer a {
+    color: #fae4b5;
+    font-weight: bold;
+}
