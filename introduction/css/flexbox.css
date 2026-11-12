@@ -1,14 +1,46 @@
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: DodgerBlue;
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
- 
-.container div {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  padding: 10px;
-  text-align: center;  
-  font-size: 30px;
+
+#experience ul,
+#hobbies ul,
+#goals ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#experience li,
+#hobbies li,
+#goals li {
+    flex: 1 1 200px;
+}
+
+#gallery table {
+    display: block;
+}
+
+#gallery caption {
+    display: block;
+}
+
+#gallery tbody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#gallery tr {
+    display: contents;
+}
+
+#gallery td {
+    display: block;
+    flex: 1 1 160px;
+    max-width: 220px;
 }
