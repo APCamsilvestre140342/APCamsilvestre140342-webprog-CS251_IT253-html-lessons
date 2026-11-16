@@ -1,0 +1,55 @@
+.container_flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.container_flex div {
+  flex: 1 1 220px;
+  background-color: #f6e6de;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+#gallery table {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+
+#gallery caption {
+  display: block;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#gallery tbody {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#gallery tr {
+  display: contents;
+}
+
+#gallery td {
+  display: block;
+  width: 150px;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+
+#gallery img {
+  display: block;
+  width: 150px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
